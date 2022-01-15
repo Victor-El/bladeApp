@@ -18,5 +18,5 @@ dependencies {
 }
 
 applicationName = "todo"
-mainClassName = 'App'
+mainClassName = 'me.codeenzyme.App'
 task stage(dependsOn: ['clean', 'installDist'])
