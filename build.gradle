@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.bladejava:blade-mvc:2.0.15.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+applicationName = "todo"
+mainClassName = 'App'
+task stage(dependsOn: ['clean', 'installDist'])
